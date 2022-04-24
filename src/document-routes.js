@@ -1,7 +1,5 @@
 import privacyFile from "./legal-docs/privacy.md";
 
-const routes = {
+export default {
   "/privacy": privacyFile
 };
-
-export default routes;
