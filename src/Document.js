@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useLocation } from "react-router-dom";
 import documentRoutes from "./document-routes";
+import logo from "./images/baaboom-logo.png";
 
 export default function Document() {
   const [content, setContent] = useState("");
@@ -19,8 +20,13 @@ export default function Document() {
   useEffect(setContentFromPath, [location.pathname]);
 
   return (
-    <div className="markdown-body">
-      <ReactMarkdown children={content} />
+    <div>
+      <div>
+        <img src={logo} alt="Baaboom logo" id="logo" />
+      </div>
+      <div className="markdown-body">
+        <ReactMarkdown children={content} />
+      </div>
     </div>
   );
 }

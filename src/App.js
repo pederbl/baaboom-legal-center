@@ -4,7 +4,7 @@ import { useRoutes, Navigate } from "react-router-dom";
 import Document from "./Document";
 import documentRoutes from "./document-routes";
 
-export default function App() {
+function routes() {
   const documentPaths = Object.keys(documentRoutes);
 
   const documentRoutesParams = documentPaths.map((path) => {
@@ -14,7 +14,7 @@ export default function App() {
     };
   });
 
-  const routes = [
+  const basicRoutes = [
     {
       path: "/",
       element: <Navigate to="/privacy" />
@@ -22,11 +22,13 @@ export default function App() {
     {
       path: "*",
       element: <div>No such document</div>
-    },
-    ...documentRoutesParams
+    }
   ];
 
-  const routesElement = useRoutes(routes);
+  return [...basicRoutes, ...documentRoutesParams];
+}
 
+export default function App() {
+  const routesElement = useRoutes(routes());
   return <div className="App">{routesElement}</div>;
 }

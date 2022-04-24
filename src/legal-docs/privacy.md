@@ -99,8 +99,8 @@ You are also entitled to address any complaints to the Swedish Information Commi
 
 ## Contact details to the Personal Data Controller
 
-Baaboom Stockholm AB
-Sandhamnsgatan 75G
+Baaboom Stockholm AB  
+Sandhamnsgatan 75G  
 115 28 Stockholm
 
 ### Changes to the Privacy Policy
