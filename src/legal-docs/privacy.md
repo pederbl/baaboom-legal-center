@@ -103,6 +103,6 @@ Baaboom Stockholm AB
 Sandhamnsgatan 75G  
 115 28 Stockholm
 
-### Changes to the Privacy Policy
+## Changes to the Privacy Policy
 
 We reserve the right to make changes to this Privacy Policy. You always find the new version on the site. In the event of changes that are of significant to our processing of personal data, this will be communicated to you.

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
 import { useLocation } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import documentRoutes from "./document-routes";
 import logo from "./images/baaboom-logo.png";
 
